@@ -1,0 +1,11 @@
+/*Container que está dentro do Cabeçalho principal*/
+.cabecalhoPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+  display: flex;
+  
+}
