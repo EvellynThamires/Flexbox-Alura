@@ -9,6 +9,7 @@
   display: flex;
 }
 
+/*Footer*/
 .rodapePrincipal-patrocinadores .container {
   display: flex;
   justify-content: space-between;
@@ -31,10 +32,32 @@
   display: flex;
 }
 
+/*Mapa de cursos*/
 .rodapePrincipal-navMap-list {
   display: flex;
   /* flex-direction: column;
   flex-wrap: wrap; Wrap, caso não couber no tamanho, ele quebra a linha e vai para a próxima.*/
   flex-flow: column wrap; /*Ele junta as duas condições. Em coluna e wrap*/
   height: 250px;
+}
+
+/*Nossos cursos*/
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+  width: 23%;
+  margin: 1%
+}
+
+/*Quarto filho do elemento, os múltiplos de quarto*/
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+  margin-right: 0;
+}
+
+/*Pegando o quarto elemento mais 1, ajeitando o primeiro elemento*/
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+  margin-left: 0;
 }
