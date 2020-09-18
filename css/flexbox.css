@@ -7,5 +7,34 @@
 
 .cabecalhoPrincipal-nav {
   display: flex;
-  
+}
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+  width: 25%;
+}
+
+/*Alinha e deixa os filhos com a mesma altura*/
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; Wrap, caso não couber no tamanho, ele quebra a linha e vai para a próxima.*/
+  flex-flow: column wrap; /*Ele junta as duas condições. Em coluna e wrap*/
+  height: 250px;
 }
