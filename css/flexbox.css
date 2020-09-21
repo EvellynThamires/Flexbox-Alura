@@ -1,5 +1,6 @@
 /*Container que está dentro do Cabeçalho principal*/
 /*Quando a direção muda, o justify content e align items mudam de direção*/
+/*Flex-basis: Ele coloca um valor para os elementos.*/
 /*Cabeçalho*/
 .cabecalhoPrincipal .container {
   display: flex;
@@ -77,7 +78,7 @@
 }
 
 .videoSobre-sobre-list {
-  flex-grow: 1;
+  flex-grow: 1; /*Utilizando "Flex" o primeiro número será o grow, o segundo o shrink e o terceiro o flex-basis*/
 }
 
 .videoSobre-video {
@@ -140,3 +141,9 @@
     margin: 0 auto;
   }
 }
+
+/*Flex grow: Ele soma quantos growns possuem, e divide igualmente entre os elementos*/
+/*Flex shrink: Ele pega todos os elementos que possuem shrink, soma os valores e diminui pela quantidade de pixels. Dado o resultado ele diminui pela quantidade de pixels*/
+/*Flex basis: Serve para definir uma largura ou altura para um elemento. Caso seja column ele define como se fosse um height, caso seja row, ele define como um width*/
+/*Row reverse ou Column reverse: Ele inverte a posição dos objetos. O que estava embaixo fica em cima*/
+/*Align-self: É usado somente nos flex items, ele alinha somente um único elemento*/
