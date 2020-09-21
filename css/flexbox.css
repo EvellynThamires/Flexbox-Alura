@@ -1,4 +1,6 @@
 /*Container que está dentro do Cabeçalho principal*/
+/*Quando a direção muda, o justify content e align items mudam de direção*/
+/*Cabeçalho*/
 .cabecalhoPrincipal .container {
   display: flex;
   align-items: center;
@@ -60,4 +62,81 @@
 /*Pegando o quarto elemento mais 1, ajeitando o primeiro elemento*/
 .conteudoPrincipal-cursos-link:nth-child(4n+1) {
   margin-left: 0;
+}
+
+/*Video*/
+.videoSobre .container {
+  display: flex;
+}
+
+.videoSobre-sobre {
+  text-align: center;
+  display: flex; /*Ele deixa os itens do mesmo tamanho*/
+  flex-direction: column;
+  flex-grow: 2; /*Ele expande ocupando o espaço na tela*/
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2; /*Para diminuir o elemento*/
+}
+
+/*Mobile*/
+@media(max-width: 768px){
+  .cabecalhoPrincipal-nav {
+    flex-direction: column;
+  }
+
+  .cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: inicial;
+    text-align: center;
+  }
+
+  .conteudoPrincipal-cursos {
+    flex-direction: column;
+  }
+
+  .conteudoPrincipal-cursos-link {
+    width: 100%;
+  }
+
+  .rodapePrincipal-navMap-list {
+    height: auto;
+  }
+
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+  }
+
+  .rodapePrincipal-contatoForm {
+    width: 100%;
+  }
+
+  .rodapePrincipal-contatoForm-fieldset {
+    justify-content: center;
+  }
+
+  /*Coloca este elemento em primeiro no menu*/
+  .cabecalhoPrincipal-nav-link-app {
+    order: -1;
+  }
+
+  .videoSobre .container {
+    flex-direction: column;
+  }
+
+  .videoSobre-video {
+    margin: 0 auto;
+  }
 }
